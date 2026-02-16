@@ -1,0 +1,52 @@
+{
+  "id": "google-calendar",
+  "uiHints": {
+    "clientId": {
+      "label": "Google OAuth Client ID",
+      "help": "OAuth 2.0 client ID from your Google Cloud project."
+    },
+    "clientSecret": {
+      "label": "Google OAuth Client Secret",
+      "sensitive": true
+    },
+    "defaultCalendarId": {
+      "label": "Default Calendar ID",
+      "help": "Calendar ID to use when none is specified. Defaults to \"primary\"."
+    },
+    "maxResults": {
+      "label": "Max Results",
+      "help": "Maximum number of events returned per request."
+    },
+    "timeZone": {
+      "label": "Time Zone",
+      "help": "IANA time zone (e.g. America/New_York). Uses calendar default if omitted.",
+      "advanced": true
+    }
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["clientId", "clientSecret"],
+    "properties": {
+      "clientId": {
+        "type": "string"
+      },
+      "clientSecret": {
+        "type": "string"
+      },
+      "defaultCalendarId": {
+        "type": "string",
+        "default": "primary"
+      },
+      "maxResults": {
+        "type": "integer",
+        "default": 25,
+        "minimum": 1,
+        "maximum": 2500
+      },
+      "timeZone": {
+        "type": "string"
+      }
+    }
+  }
+}

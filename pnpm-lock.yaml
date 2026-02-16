@@ -323,6 +323,16 @@ importers:
         specifier: workspace:*
         version: link:../..
 
+  extensions/google-calendar:
+    dependencies:
+      '@sinclair/typebox':
+        specifier: 0.34.48
+        version: 0.34.48
+    devDependencies:
+      openclaw:
+        specifier: workspace:*
+        version: link:../..
+
   extensions/google-gemini-cli-auth:
     devDependencies:
       openclaw:
