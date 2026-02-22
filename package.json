@@ -134,6 +134,7 @@
     "@slack/web-api": "^7.14.1",
     "@whiskeysockets/baileys": "7.0.0-rc.9",
     "ajv": "^8.18.0",
+    "canvas": "^3.2.1",
     "chalk": "^5.6.2",
     "chokidar": "^5.0.0",
     "cli-highlight": "^2.1.11",

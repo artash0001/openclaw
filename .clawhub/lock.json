@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "skills": {
+    "sonoscli": {
+      "version": "1.0.0",
+      "installedAt": 1771458898602
+    },
+    "canva": {
+      "version": "1.0.0",
+      "installedAt": 1771459873198
+    },
+    "agentmail": {
+      "version": "1.1.1",
+      "installedAt": 1771537205988
+    },
+    "playwright-mcp": {
+      "version": "1.0.0",
+      "installedAt": 1771538490649
+    },
+    "cellcog": {
+      "version": "1.0.20",
+      "installedAt": 1771540023858
+    },
+    "podcast": {
+      "version": "1.0.1",
+      "installedAt": 1771540276914
+    }
+  }
+}

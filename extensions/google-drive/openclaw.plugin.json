@@ -1,0 +1,44 @@
+{
+  "id": "google-drive",
+  "uiHints": {
+    "clientId": {
+      "label": "Google OAuth Client ID",
+      "help": "OAuth 2.0 client ID from your Google Cloud project."
+    },
+    "clientSecret": {
+      "label": "Google OAuth Client Secret",
+      "sensitive": true
+    },
+    "defaultFolderId": {
+      "label": "Default Folder ID",
+      "help": "Drive folder ID to use when none is specified. Defaults to \"root\"."
+    },
+    "maxResults": {
+      "label": "Max Results",
+      "help": "Maximum number of files returned per request."
+    }
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["clientId", "clientSecret"],
+    "properties": {
+      "clientId": {
+        "type": "string"
+      },
+      "clientSecret": {
+        "type": "string"
+      },
+      "defaultFolderId": {
+        "type": "string",
+        "default": "root"
+      },
+      "maxResults": {
+        "type": "integer",
+        "default": 25,
+        "minimum": 1,
+        "maximum": 1000
+      }
+    }
+  }
+}
